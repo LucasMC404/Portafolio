@@ -1,3 +1,65 @@
+/* Globales */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model */
+    scroll-snap-type: y mandatory;
+}
+
+
+/* Scroll-snap */
+.servicios,
+.titulo, 
+.formulario{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-size: 16px; /* 1 rem = 10px */
+}
+
+/* ----------------------------------- */
+
+
+/* Estilos Generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-titulo{
+    font-size: 4rem;
+    padding: 1.5rem 0;
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.seccion-texto{
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+/* ------------------------------------ */
+
 /*Barra de Navegacion*/
 .navbar{
     padding: 2rem;
@@ -16,9 +78,44 @@
     text-align: center;
 }
 
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen{
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    border-radius: 50%;
+    
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* Sobre mí */
+.sobre-mi{
+    height: 50rem;
+    padding: 2rem;
+}
+
+.sobre-mi .contenedor{
+    max-width: 60rem;
+    text-align: center;
+    margin: 2rem;
+}
+
 /* Adaptable Responsivo */
 @media screen and (max-width: 767px){
     .navbar-brand{
         display: none;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
     }
 }
