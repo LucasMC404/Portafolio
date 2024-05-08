@@ -45,6 +45,11 @@ h1{
     background-color: #1b1b32;
 }
 
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
 .seccion-titulo{
     font-size: 4rem;
     padding: 1.5rem 0;
@@ -90,9 +95,14 @@ h1{
     
 }
 
-.hero-principal h2{
-    font-size: 1.5rem;
+.hero-principal h1{
+    font-size: 4rem;
     color: #615151;
+}
+
+.hero-principal h2{
+    font-size: 2.5rem;
+    color: #221c1c;
 }
 
 /* Sobre mí */
@@ -106,6 +116,32 @@ h1{
     text-align: center;
     margin: 2rem;
 }
+
+/* Experiencia */
+.experiencia{
+    padding: 4rem;
+}
+
+.experiencia .row div{
+    height: 25rem;
+    background-color: purple;
+    border: 3px solid orange;
+}
+
+.experiencia-titulo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.experiencia i{
+    font-size: 4rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 2rem 2rem;
+    border-radius: 50%;
+}
+
 
 /* Adaptable Responsivo */
 @media screen and (max-width: 767px){
