@@ -57,10 +57,23 @@ h1{
     font-family: "Roboto Mono", monospace;
 }
 
+.seccion-descripcion{
+    font-size: 2rem;
+    color: #615151;
+}
+
 .seccion-texto{
     font-size: 2rem;
     padding: 0.5rem 0;
     margin: 0;
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
 }
 
 /* ------------------------------------ */
@@ -118,35 +131,115 @@ h1{
 }
 
 /* Experiencia */
-.experiencia{
-    padding: 4rem;
+
+.experiencia .columna{
+    margin: 2rem 0;
+    padding: 3rem 3rem 2rem 3rem;
+    border: 0.2rem solid #8080804d;
+    transition: all 0.2s ease-in;
 }
 
-.experiencia .row div{
-    height: 25rem;
-    background-color: purple;
-    border: 3px solid orange;
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
 }
+
+.experiencia{
+    padding: 4rem 4rem 6rem 4rem;
+}
+
 
 .experiencia-titulo{
+    margin: 2rem;
     font-size: 2.5rem;
     font-weight: bold;
+    margin: 2rem 0 1rem 0;
+}
+
+.badges-contenedor{
+    font-size: 2rem;
     margin: 1rem 0;
+}
+
+.badge{
+    margin: 0 0.2rem;
 }
 
 .experiencia i{
     font-size: 4rem;
-    color: #7ade30;
+    color: #ffffff;
     background-color: #0a0a23;
     padding: 2rem 2rem;
+    border: 0.2rem solid #cecece;
     border-radius: 50%;
 }
 
+/* Proyectos */
+.proyectos-recientes{
+    padding: 4rem;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 6rem;
+    margin: 1rem;
+}
 
 /* Adaptable Responsivo */
 @media screen and (max-width: 767px){
     .navbar-brand{
         display: none;
+    }
+    
+    .experiencia .columna{
+        margin: 3rem 0;
+        padding: 4rem 0 2rem 0;
     }
 }
 
@@ -154,4 +247,5 @@ h1{
     .hero-inferior-imagen{
         max-width: 600px;
     }
+
 }
