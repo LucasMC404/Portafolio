@@ -236,6 +236,39 @@ h1{
     margin: 1rem;
 }
 
+
+/* Articulos */
+.articulos{
+    min-height: 50rem;
+    padding: 3rem;
+}
+
+.articulos .card{
+    width: 60%;
+    max-width: 60rem;
+    margin: 1.5rem;
+}
+
+.articulos .card-header{
+    font-weight: bold;
+}
+
+
+/* Testimonios */
+
+.testimonio{
+    padding: 4rem 4rem 8rem 4rem;
+}
+
+.testimonio .carousel{
+    max-width: 80rem;
+}
+
+.carousel-item{
+    height: 50rem;
+}
+
+
 /* Adaptable Responsivo */
 @media screen and (max-width: 400px){
     .overlay p{
