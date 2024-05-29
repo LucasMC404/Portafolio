@@ -27,8 +27,8 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -290,31 +290,56 @@
 
     <!-- Testimonios -->
     <section class="testimonio seccion-clara">
-      <h2>Muestra de Carrusel</h2>
-      <h3>Ejemplos de carrusel en forma de testimonios de clientes</h3>
+      <div class="testimonio-header">
+        <h2>Muestra de Carrusel</h2>
+        <h3>Ejemplos de carrusel en forma de testimonios de clientes</h3>
+      </div>
 
       <!-- Carrusel -->
       <div id="testimonios-carrrusel" class="carousel carousel-dark slide">
-        <div class="carousel-inner">
+        <!--Interior del carrusel-->
+        <div class="carousel-inner"> 
+
           <div class="carousel-item active">
             
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="" alt="">
-              <p></p>
-              <div>
-                <p></p>
-                <p></p>
+              <img class="testimonio-imagen rounded-circle" src="img/cliente1.svg" alt="foto Kito">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod, fuga labore nostrum impedit possimus adipisci totam cumque quidem deleniti? Autem ea quam ipsam repellendus ducimus quae debitis id molestias!</p>
+              <div class="testimonio-info">
+                <p class="cliente">Kito</p>
+                <p class="cargo">Gerente de proyectos en desarrollo web</p>
               </div>
             </div>
 
           </div>
+
           <div class="carousel-item">
-            <img src="img/proyecto2.png" class="d-block w-100" alt="...">
+            
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/cliente2.svg" alt="foto Pame">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod, fuga labore nostrum impedit possimus adipisci totam cumque quidem deleniti? Autem ea quam ipsam repellendus ducimus quae debitis id molestias!</p>
+              <div class="testimonio-info">
+                <p class="cliente">Pame</p>
+                <p class="cargo">Gerente de proyectos en desarrollo web</p>
+              </div>
+            </div>
+
+
           </div>
+
           <div class="carousel-item">
-            <img src="img/proyecto3.png" class="d-block w-100" alt="...">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/cliente3.svg" alt="foto Negro">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod, fuga labore nostrum impedit possimus adipisci totam cumque quidem deleniti? Autem ea quam ipsam repellendus ducimus quae debitis id molestias!</p>
+              <div class="testimonio-info">
+                <p class="cliente">Negro</p>
+                <p class="cargo">Gerente de proyectos en desarrollo web</p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Botones carrusel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrrusel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
@@ -325,6 +350,29 @@
         </button>
       </div>
 
+    </section>
+
+    <section class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container rectangulo text-center d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4  descripcion">
+              Contáctame para iniciar tu proyecto Web y trabajemos juntos para llevarlo a cabo.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:lucas.morcan@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- JS -->

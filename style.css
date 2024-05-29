@@ -94,6 +94,10 @@ h1{
     justify-content: space-between;
 }
 
+.nav-item a{
+    font-weight: bold;
+}
+
 /* Seccion Hero */
 .hero{
     background-color: #f5f6f7;
@@ -260,6 +264,10 @@ h1{
     padding: 4rem 4rem 8rem 4rem;
 }
 
+.testimonio-header{
+    text-align: center;
+}
+
 .testimonio .carousel{
     max-width: 80rem;
 }
@@ -268,6 +276,96 @@ h1{
     height: 50rem;
 }
 
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen{
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.testimonio-texto{
+    margin-bottom: 0;
+    font-family: "Roboto Mono", monospace;
+    
+}
+
+.testimonio-info .cliente{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.testimonio-info .cargo{
+    font-size: 1.2rem;
+    color:#1b1b32;
+}
+
+/* Contacto */
+
+.contacto .container{
+    max-width: 110rem;
+    min-height: 20rem;
+    padding: 2rem;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 1rem;
+    box-shadow: 0px 1px 20px 1px rgb(0, 0, 0)
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.contacto button i{
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: 0.2 ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: rgb(13, 110, 253);
+}
 
 /* Adaptable Responsivo */
 @media screen and (max-width: 400px){
@@ -291,9 +389,35 @@ h1{
     }
 }
 
+@media screen and (max-width: 800px){
+    .testimonio-imagen{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .testimonio-texto{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .testimonio-header{
+        margin-bottom: 2rem;
+    }
+
+    .testimonio-imagen{
+        margin-top: 12rem;
+    }
+
+    .sobre-mi{
+        padding: 30rem 0;
+    }
+}
+
 @media screen and (min-width: 700px){
     .hero-inferior-imagen{
         max-width: 600px;
     }
-
 }
+
+
